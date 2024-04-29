@@ -29,11 +29,14 @@ body {
   min-height: 110rem;
 }
 
+
+
 header {
   text-align: center;
 }
 
 header img {
+  border-radius: 5em;
   width: 8rem;
   object-fit: contain;
   margin: 3rem auto 1rem auto;
