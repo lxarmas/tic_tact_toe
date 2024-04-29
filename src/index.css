@@ -20,10 +20,10 @@ html {
 body {
   background: radial-gradient(
       circle at top,
-      rgba(241, 210, 70, 0.98),
-      rgba(250, 176, 103, 0.87)
+      rgba(195, 233, 187, 0.98),
+      rgba(90, 131, 111, 0.87)
     ),
-    url('bg-pattern-dark.png');
+    url('/public/tic_tact_toe.png');
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
   min-height: 110rem;
@@ -42,17 +42,17 @@ header img {
 
 h1 {
   font-family: 'Caprasimo', cursive;
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 0 auto 3rem auto;
-  color: #3f3b00;
+  color: #7f7400;
 }
 
 #game-container {
   max-width: 45rem;
   margin: 3rem auto;
   padding: 2rem;
-  border-radius: 6px;
-  background: linear-gradient(#383624, #282617);
+  border-radius: 46px;
+  /* background: linear-gradient(#ffffff, #aeaeae); */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -75,20 +75,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: #000000;
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: #000000;
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
+  color: #000000;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -97,7 +97,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: #000000;
 }
 
 .player {
@@ -111,7 +111,7 @@ h1 {
   display: inline-block;
   width: 10rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: #000000;
   text-transform: uppercase;
   margin: 0;
   padding: 0.5rem;
@@ -127,7 +127,7 @@ h1 {
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #46432f;
+  background-color: #000000;
   text-align: center;
   text-transform: uppercase;
 }
@@ -135,7 +135,7 @@ h1 {
 .player-symbol {
   margin-left: 1rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: #b00202;
 }
 
 ol {
@@ -151,7 +151,7 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: #f83131;
   border: none;
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
@@ -182,8 +182,8 @@ ol {
   width: 8rem;
   height: 8rem;
   border: none;
-  background: #aca788;
-  color: #3f3b00;
+  background: #c2a800;
+  color: #f2ff00;
   font-size: 5rem;
   cursor: pointer;
   font-family: 'Caprasimo', cursive;
@@ -200,7 +200,7 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(40, 38, 23, 0.95);
+  background-color: rgba(196, 213, 202, 0.95);
   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
@@ -208,14 +208,14 @@ ol {
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: #000000;
   margin: 0;
 }
 
 #game-over p {
   font-size: 2rem;
   text-align: center;
-  color: #e1dec7;
+  color: #ff0000;
 }
 
 #game-over button {
@@ -223,18 +223,18 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid #ff0000;
+  color: #ff0000;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s, color 0.2s;
-  box-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
+  box-shadow: 0 0 8px rgba(251, 251, 251, 0.4);
 }
 
 #game-over button:hover {
-  background: #fcd256;
-  color: #3f3b00;
+  background: #c6d6c3;
+  color: #ffffff;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
 }
@@ -256,12 +256,12 @@ ol {
 
 #log li.highlighted {
   background-color: #3f3b00;
-  color: white;
+  color: rgb(255, 0, 0);
 }
 
 #game-hints {
   text-align: center;
-  color: #46432f;
+  color: #000000;
 }
 
 #game-hints h2 {
@@ -322,15 +322,15 @@ ol {
 
 @keyframes pulse {
   0% {
-    border-color: #f6e35a;
+    border-color: #f65a5a;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
   }
   50% {
-    border-color: #f8c031;
+    border-color: #f83131;
     box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
   }
   100% {
-    border-color: #f6e35a;
+    border-color: #f65a5a;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
   }
 }
